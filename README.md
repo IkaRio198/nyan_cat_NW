@@ -12,13 +12,15 @@ Les différents objets de l'image sont embriqués comme des pièces de puzzle af
 
 Les différents objets sont dessinés par des fonctions :
 ```py
-drawStar(x, y, type)
-drawRainbow(x, y)
-drawCatHead(x, y)
-drawCatBody(x, y)
-drawCatLeg(x, y)
+draw_star(x, y, variety)
+draw_rainbow(x, y)
+draw_cat_head(x, y)
+draw_cat_body(x, y)
+draw_cat_leg(x, y)
 ```
-La fonction `drawCatHead(x, y)` va par exemple créer la tête du chat. Les paramètres `x` et `y` permettent de positioner la tête du chat dans l'écran. Cela signifie les objets n'ont pas de positions fixes. Les positions sont personnalisables. Il est par conséquent possible d'animer un peu l'image.
+La fonction `draw_cat_head(x, y)` va par exemple créer la tête du chat. Les paramètres `x` et `y` permettent de positioner la tête du chat dans l'écran. Cela signifie les objets n'ont pas de positions fixes. Les positions sont personnalisables. Il est par conséquent possible d'animer un peu l'image.
+
+Ce qui ressemble à des pixels dans la réalisation finale sont en réalité des carrés de 5 pixels sur 5 pixels.
 
 ### Ressources
 
