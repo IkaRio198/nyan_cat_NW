@@ -4,7 +4,7 @@
 
 Représentation du célèbre mème [Nyan Cat](https://fr.wikipedia.org/wiki/Nyan_Cat) en Python affichable sur calculatrice *NumWorks*.
 
-Développé par Ilyas R. à l'occasation du DM21 **"💖 … Les mathématiques sont belles !"** édition 2021-2022. [#nsi_xyz](https://twitter.com/nsi_xyz)
+Développé par Ilyas R. à l'occasion du DM21 **"💖 … Les mathématiques sont belles !"** édition 2021-2022. [#nsi_xyz](https://twitter.com/nsi_xyz)
 
 ### Fonctionnement
 
