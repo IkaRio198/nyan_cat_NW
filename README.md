@@ -16,7 +16,7 @@ draw_star(x, y, variety)
 draw_rainbow(x, y)
 draw_cat_head(x, y)
 draw_cat_body(x, y)
-draw_cat_leg(x, y)
+draw_cat_leg(x, y, variety)
 ```
 La fonction `draw_cat_head(x, y)` va par exemple créer la tête du chat. Les paramètres `x` et `y` permettent de positioner la tête du chat dans l'écran. Cela signifie les objets n'ont pas de positions fixes. Les positions sont personnalisables. Il est par conséquent possible d'animer un peu l'image.
 
