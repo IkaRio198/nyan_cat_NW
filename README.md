@@ -2,9 +2,17 @@
 
 ### Présentation
 
-Représentation du célèbre mème [Nyan Cat](https://fr.wikipedia.org/wiki/Nyan_Cat) en Python affichable sur calculatrice *NumWorks*.
+Représentation du célèbre mème [Nyan Cat](https://fr.wikipedia.org/wiki/Nyan_Cat) en Python pour calculatrice *NumWorks*.
 
 Développé par Ilyas R. à l'occasion du DM21 **"💖 … Les mathématiques sont belles !"** édition 2021-2022. [#nsi_xyz](https://twitter.com/nsi_xyz)
+
+### Lancement
+
+Il suffit d'importer le programme sur sa calculatrice depuis la [page du script](https://my.numworks.com/python/ikario198/dm21), l'exécuter, et laisser la magie opérer ! (bon en vrai c'est instantané)
+Voici le rendu final :
+
+![Nyan Cat](https://user-images.githubusercontent.com/58112248/159076183-714c2f6c-8875-4953-8897-c13195255c60.png)
+
 
 ### Fonctionnement
 
