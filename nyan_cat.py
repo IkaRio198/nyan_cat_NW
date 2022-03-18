@@ -1,3 +1,4 @@
+# nyan_cat NW 2022
 from kandinsky import *
 
 """
@@ -132,7 +133,6 @@ def nyan_cat():
     draw_cat_leg(115, 155, "front")
     draw_cat_leg(90, 140, "back")
     draw_cat_leg(70, 105, "tail")
-    display()
 
 
 nyan_cat()
