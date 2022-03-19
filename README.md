@@ -49,6 +49,41 @@ Les paramètres `x`, et `y` correspondent au centre de l'étoile. Étant donné 
 > ⚠️ Note : Les coordonnées du centre de l'écran ne sont pas `(0 ; 0)`. Le `(0 ; 0)` est positionné tout en haut à gauche de l'écran ! Si on va en bas le `y` augmente, si va à droite, le `x` augmente.
 
 
+L'objet `rainbow` lui, va quoiqu'il arrive aller de gauche à droite, donc le `x` a juste à être multiplié par un nombre `k*5`, `k` qui sera égal à `0` à la première boucle, puis incrémenter à chaque boucle (on peut comparer le `k` au `i`, seulement, `k` est utilisé car `i` est déjà utilisé). Il est donc inutile de créer une liste avec la liste des positions des `x`.
+
+Il possède donc qu'une liste qui elle, indique la position des `y`.
+
+```py
+    rainbow_colors = [colors[2], colors[3], colors[4], colors[5], colors[6], colors[7]]
+    y_template = [0, 0, 0, 0, 5, 5, 5, 5, 5, 5, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 5, 5, 5, 5]
+    for i in range(len(rainbow_colors)):
+        for j in range(3):
+            for k in range(len(y_template)):
+                fill_rect(x + k * 5, y + y_template[k] + j * 5 + i * 5 * 3, 5, 5, rainbow_colors[i])
+```
+
+Le dernier "type" d'objet, le plus complexe, est un objet de grande taille, et n'ayant pas de pattern régulier. Comme par exemple, la tête du chat.
+
+Dans ce cas, l'objet sera dessiné de gauche à droite et de haut en bas pour chaque couleur de l'objet. Les paramètres de la fonction `draw_cat_head(x, y)` indiquent donc la position tout en haut à gauche de la tête, et non le centre.
+
+Le `0` affiché tout en haut à droite correspond aux paramètres `(x, y)`
+
+![cat](https://user-images.githubusercontent.com/58112248/159115878-935775e0-da47-494e-b685-6f302362a066.png)
+
+
+Prenons l'exemple de la couleur noire. Les carrés noirs de la tête seront dessinés ligne par ligne. Quand une ligne est terminée, on incrémente `y`. Mais comment savoir si une ligne est terminée ? Et bien, analysons la liste de la couleure noire :
+
+```py
+    x_head_black = [10, 15, 60, 65, 5, 20, 55, 70, 5, 25, 50, 70, 5, 30, 35, 40, 45, 70, 5, 70, 0, 75, 0, 25, 60, 75, 0,
+                    20, 25, 45, 55, 60, 75, 0, 75, 0, 25, 40, 55, 75, 5, 25, 30, 35, 40, 45, 50, 55, 70, 10, 65, 15, 20,
+                    25, 30, 35, 40, 45, 50, 55, 60]
+```
+
+Combien y a t-il de carrés de `5*5` dans la première ligne ? Il y en a 4. Prenons les 4 premiers éléments de la liste `x_head_black`, soit `10`, `15`, `60`, `65`, en regardant l'image de la tête du chat ci-dessus, il ne faut pas être un génie pour comprendre à quoi ces nombres correspondent, ce sont grosso modo, la position `x` de chaque carré noir. Maintenant, regardons le 5ème élément de la liste, `5`, il correspond au premier carré noir de la deuxième ligne. Comment l'algorythme a détecté qu'on voulait un saut de ligne ? Il a comparé `65` (position `3` dans la liste), et `5` (position `3 + 1` dans la liste), et si 65 est inférieur à 5, on saute une ligne. 🙂
+
+Donc si `x_head_black[i] > x_head_black[i + 1]`, on incrémente `y`. 😄
+
+
 ### Ressources
 
 Ressources utilisées :
