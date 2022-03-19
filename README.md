@@ -66,7 +66,7 @@ Le dernier "type" d'objet, le plus complexe, est un objet de grande taille, et n
 
 Dans ce cas, l'objet sera dessiné de gauche à droite et de haut en bas pour chaque couleur de l'objet. Les paramètres de la fonction `draw_cat_head(x, y)` indiquent donc la position tout en haut à gauche de la tête, et non le centre.
 
-Le `0` affiché tout en haut à droite correspond aux paramètres `(x, y)`
+Le `0` affiché tout en haut à gauche correspond aux paramètres `(x, y)`
 
 ![cat](https://user-images.githubusercontent.com/58112248/159115878-935775e0-da47-494e-b685-6f302362a066.png)
 
