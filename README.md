@@ -71,7 +71,7 @@ Le `0` affiché tout en haut à gauche correspond aux paramètres `(x, y)`
 ![cat](https://user-images.githubusercontent.com/58112248/159115878-935775e0-da47-494e-b685-6f302362a066.png)
 
 
-Prenons l'exemple de la couleur noire. Les carrés noirs de la tête seront dessinés ligne par ligne. Quand une ligne est terminée, on incrémente `y`. Mais comment savoir si une ligne est terminée ? Et bien, analysons la liste de la couleure noire :
+Prenons l'exemple de la couleur noire. Les carrés noirs de la tête seront dessinés ligne par ligne. Quand une ligne est terminée, on incrémente `y`. Mais comment savoir si une ligne est terminée ? Et bien, analysons la liste de la couleur noire :
 
 ```py
     x_head_black = [10, 15, 60, 65, 5, 20, 55, 70, 5, 25, 50, 70, 5, 30, 35, 40, 45, 70, 5, 70, 0, 75, 0, 25, 60, 75, 0,
